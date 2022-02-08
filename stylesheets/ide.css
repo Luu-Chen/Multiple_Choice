@@ -1,0 +1,1811 @@
+.home{
+  opacity: 0.5;
+}
+.home:hover{
+  opacity: 1;
+}
+.site-header {
+    background-color: #343a40;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px); */
+}
+.site-header a {
+color: #8e8e8e;
+transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1.5;
+}
+.product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    transform: rotate(30deg);
+}
+.product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}  
+.product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+}
+.flex-equal > * {
+    flex: 1;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.hero{
+	width:100%;
+	height:100vh;
+	position:relative;
+	overflow:hidden;
+}
+.hero-b{
+  background-image: url(../images/bg-r1.png);
+  background-position: 50% 83%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  height: 440px;
+}
+.hero-title{
+  position: relative;
+  display: inline-block;
+  padding: 0 17% 50px 14%;
+  margin-left: -15px;
+  z-index: 10;
+}
+.hero-title::before{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 0px 15px 0px 0px;
+  z-index: -10;
+}
+.text{
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 0.9;
+  color: darkorange;
+}
+.text-down{
+  display: block;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  font-style:italic;
+}
+.banner{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:relative;
+}
+.banner-slide{
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	float:left;
+	display:none;
+}
+.slide-active{
+	display:block;
+}
+.slide1{
+	background-image:url(https://images.microcms-assets.io/protected/ap-northeast-1:59b80952-1d18-4c8d-8ae6-ac90c7acd3ae/service/salisty/media/mainVisual_0343.jpg?auto=compress&w=2320);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.slide2{
+	background-image:url(../images/1.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.slide3{
+	background-image:url(../images/2.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.button{
+    position: absolute;
+    transform:rotate(180deg);
+    top: 50%;
+    left: 244px;
+    height: 80px;
+    width: 40px;
+    margin-top:-40px;
+    background:url(../img/arrow.png) center center no-repeat;
+}
+.button:hover{
+	/*background:#333;這樣不行，背景顏色會覆蓋上面的背景圖片，要寫下面的背景顏色*/
+	background-color:#333;
+	opacity: 0.8;
+	/* filter:alpha(opacity=80); */
+}
+.banner-text{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 40%;
+}
+.dots {
+	position: absolute;
+	bottom: 25px;
+	right: 0;
+	text-align: right;
+	padding-right: 24px;
+	line-height: 12px;
+}
+.dots span {
+	display: inline-block;
+	width: 50px;
+	height: 10px;
+	border-radius: 10%;
+	margin-left: 8px;
+	background-color: rgba(7, 17, 27, 0.4);
+	cursor: pointer;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8) inset;
+}
+.dots span.active{
+	box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4) inset;
+	background-color: #fff;
+}
+.prediction{
+  padding-top: 70px;
+}
+.prediction .title{
+  margin: 0 auto;
+  font-weight: 600;
+}
+.card-item{
+  border: 1px solid sienna;
+  border-radius: 10px;
+}
+.card-item .item1{
+  margin: 0 auto;
+  display: block;
+}
+.step::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -3%;
+  background-image: url(../images/caret-right-fill.svg);
+  width: 15px;
+  height: 15px;
+}
+.uul{
+  padding-left: 2rem;
+  list-style: simp-chinese-informal;
+  font-weight: 600;
+}
+.uul li{
+  margin: 0.5rem auto;
+}
+.fb{
+  color: black;
+}
+.line-in{
+  color: black;
+}
+.fb:hover{
+  color: red;
+}
+.line-in:hover{
+  color: red;
+}
+.line-btn{
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+  z-index: 9999;
+}
+.line-btn:hover{
+  opacity: 0.85;
+}
+.wrap{
+    width: 100%;
+    display: none;
+    padding-top: 80px;
+    background-color: #eee;
+  }
+  .loading{
+    display: none;
+  }
+  .loading-time{
+    margin: 0 auto;
+    height: 100vh;
+  }
+  .title{
+    margin: 0 auto;
+  }
+  .title h3 {
+      margin: 0px auto 5px auto;
+      font-family: 'Encode Sans Semi Condensed', Verdana, sans-serif;
+      font-size: 3rem;
+      font-weight: 300;
+      text-align: center;
+    }
+  .loader {
+      position: relative;
+      margin: 0 auto;
+      /* top: 50%;
+      left: 50%; */
+      width: 160px;
+      height: 160px;
+      /* margin: -80px 0px 0px -80px; */
+      background-color: transparent;
+      border-radius: 50%;
+      border: 2px solid #E3E4DC;
+    }
+    
+    .loader:before {
+      content: '';
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      border: 2px solid #898a86;
+      border-radius: 50%;
+      top: -2px;
+      left: -2px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      clip: rect(0px, 35px, 35px, 0px);
+      z-index: 10;
+      -webkit-animation: rotate infinite;
+              animation: rotate infinite;
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+    }
+    
+    .loader:after {
+      content: '';
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      border: 2px solid #c1bebb;
+      border-radius: 50%;
+      top: -2px;
+      left: -2px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      clip: rect(0px, 164px, 150px, 0px);
+      z-index: 9;
+      -webkit-animation: rotate2 3s linear infinite;
+              animation: rotate2 3s linear infinite;
+    }
+    
+    .hexagon-container {
+      position: relative;
+      top: 33px;
+      left: 37px;
+      border-radius: 50%;
+      list-style: none;
+      margin-bottom: 0;
+      padding: 0;
+    }
+    
+    .hexagon {
+      position: absolute;
+      width: 40px;
+      height: 23px;
+      background-color: #556C82;
+    }
+    
+    .hexagon:before {
+      content: "";
+      position: absolute;
+      top: -11px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 11.5px solid #556C82;
+    }
+    
+    .hexagon:after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 11.5px solid #556C82;
+    }
+    
+    .hexagon.hex_1 {
+      top: 0px;
+      left: 0px;
+      -webkit-animation: Animasearch 3s ease-in-out infinite;
+              animation: Animasearch 3s ease-in-out infinite;
+      -webkit-animation-delay: 0.21429s;
+              animation-delay: 0.21429s;
+    }
+    
+    .hexagon.hex_2 {
+      top: 0px;
+      left: 42px;
+      -webkit-animation: Animasearch 3s ease-in-out infinite;
+              animation: Animasearch 3s ease-in-out infinite;
+      -webkit-animation-delay: 0.42857s;
+              animation-delay: 0.42857s;
+    }
+    
+    .hexagon.hex_3 {
+      top: 36px;
+      left: 63px;
+      -webkit-animation: Animasearch 3s ease-in-out infinite;
+              animation: Animasearch 3s ease-in-out infinite;
+      -webkit-animation-delay: 0.64286s;
+              animation-delay: 0.64286s;
+    }
+    
+    .hexagon.hex_4 {
+      top: 72px;
+      left: 42px;
+      -webkit-animation: Animasearch 3s ease-in-out infinite;
+              animation: Animasearch 3s ease-in-out infinite;
+      -webkit-animation-delay: 0.85714s;
+              animation-delay: 0.85714s;
+    }
+    
+    .hexagon.hex_5 {
+      top: 72px;
+      left: 0px;
+      -webkit-animation: Animasearch 3s ease-in-out infinite;
+              animation: Animasearch 3s ease-in-out infinite;
+      -webkit-animation-delay: 1.07143s;
+              animation-delay: 1.07143s;
+    }
+    
+    .hexagon.hex_6 {
+      top: 36px;
+      left: -21px;
+      -webkit-animation: Animasearch 3s ease-in-out infinite;
+              animation: Animasearch 3s ease-in-out infinite;
+      -webkit-animation-delay: 1.28571s;
+              animation-delay: 1.28571s;
+    }
+    
+    .hexagon.hex_7 {
+      top: 36px;
+      left: 21px;
+      -webkit-animation: Animasearch 3s ease-in-out infinite;
+              animation: Animasearch 3s ease-in-out infinite;
+      -webkit-animation-delay: 1.5s;
+              animation-delay: 1.5s;
+    }
+    
+    @-webkit-keyframes Animasearch {
+      0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+      }
+      15%,
+      50% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+        opacity: 0;
+      }
+      65% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes Animasearch {
+      0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+      }
+      15%,
+      50% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+        opacity: 0;
+      }
+      65% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+      }
+    }
+    
+    @-webkit-keyframes rotate {
+      0% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+        clip: rect(0px, 35px, 35px, 0px);
+      }
+      50% {
+        clip: rect(0px, 40px, 40px, 0px);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+        clip: rect(0px, 35px, 35px, 0px);
+      }
+    }
+    
+    @keyframes rotate {
+      0% {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+        clip: rect(0px, 35px, 35px, 0px);
+      }
+      50% {
+        clip: rect(0px, 40px, 40px, 0px);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+        clip: rect(0px, 35px, 35px, 0px);
+      }
+    }
+    
+    @-webkit-keyframes rotate2 {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        clip: rect(0px, 164px, 150px, 0px);
+      }
+      50% {
+        clip: rect(0px, 164px, 0px, 0px);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+      }
+      100% {
+        -webkit-transform: rotate(720deg);
+                transform: rotate(720deg);
+        clip: rect(0px, 164px, 150px, 0px);
+      }
+    }
+    
+    @keyframes rotate2 {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        clip: rect(0px, 164px, 150px, 0px);
+      }
+      50% {
+        clip: rect(0px, 164px, 0px, 0px);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+      }
+      100% {
+        -webkit-transform: rotate(720deg);
+                transform: rotate(720deg);
+        clip: rect(0px, 164px, 150px, 0px);
+      }
+    }
+    
+    @-webkit-keyframes rotate3 {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes rotate3 {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+      }
+    }
+  .example{
+    background:#eee;
+    width:255px;
+    font-size:80%;
+    margin:20px auto;
+    padding:10px;
+    position:relative;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+  }
+  .pbar .ui-progressbar-value {
+    display:block !important;
+  }
+  .pbar {
+    overflow: hidden;
+  }
+  .percent {
+    position:relative;
+    text-align: right;
+  }
+  .elapsed {
+    position:relative;
+    text-align: right;
+  }
+  .ui-progressbar{
+    height: 0.8em;
+  }
+  .ui-progressbar .ui-progressbar-value{
+    margin: -0.5px;
+  }
+.wrap2{
+  width: 100%;
+  display: none;
+  /* padding-top: 80px;
+  background-image: url('../images/test1.jpg');background-position: 50% 50%;background-size: cover; */
+}
+.modal-open{
+    overflow: auto;
+    padding-right: 0 !important;
+  }
+  .modal-open header{
+    padding-right: 0 !important;
+  }
+  .modal-content{
+    margin-top: 20%;
+  }
+  .btn-w{
+    color: white;
+  }
+  .btn-w:hover{
+    color: blue;
+  }
+  .m-btn{
+    font-size: 40px;
+    padding: 0 15px  !important;
+  }
+.cnt{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: #ffd402;
+    border-radius: 50%;
+    top: calc( (40 - 24) / 2 * 0px );
+    left: 0;
+  }
+  .c-cnt{
+    list-style: none;
+    border-left: 8px solid #ffd402;
+    margin-left: 16px;
+    padding: 40px 0px 0px 0px;
+    width: 180px;
+  }
+  .c-cnt li{
+    padding-left: 15px;
+    border-bottom: 4px solid #eef4f7;
+    padding-top: 8px;
+    position: relative;
+    margin-left: -7px;
+  }
+  .c-cnt li::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #eef4f7;
+    left: 2px;
+    top: 15px;
+  }
+  #msform {
+      text-align: center;
+      position: relative;
+  }
+  #msform fieldset {
+    background: white;
+    margin-bottom: 20px;
+    border: 0 none;
+    border-radius: 3px;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+  }
+  /*Hide all except first fieldset*/
+  #msform fieldset:not(:first-of-type) {
+      display: none;
+  }
+  /*inputs*/
+  #msform input, #msform textarea {
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    margin-bottom: 10px;
+    display: inline-block;
+      box-sizing: border-box;
+      font-family: montserrat;
+      color: #2C3E50;
+      font-size: 13px;
+  }
+  /*buttons*/
+  #msform .action-button {
+      width: 100px;
+      background: #27AE60;
+      font-weight: bold;
+      color: white;
+      border: 0 none;
+      border-radius: 1px;
+      cursor: pointer;
+      padding: 10px 5px;
+      margin: 10px 5px;
+  }
+  #msform .action-button:hover, #msform .action-button:focus {
+      box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+  }
+  /*headings*/
+  .fs-title {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    font-weight: 700;
+    text-align: left;
+  }
+  .fs-subtitle {
+      font-weight: normal;
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 20px;
+  }
+  /*progressbar*/
+  #progressbar {
+      margin-bottom: 30px;
+      overflow: hidden;
+      /*CSS counters to number the steps*/
+      counter-reset: step;
+  }
+  #progressbar li {
+      list-style-type: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 9px;
+      width: 33.33%;
+      float: left;
+      position: relative;
+  }
+  #progressbar li:before {
+      content: counter(step);
+      counter-increment: step;
+      width: 20px;
+      line-height: 20px;
+      display: block;
+      font-size: 10px;
+      color: #333;
+      background: white;
+      border-radius: 3px;
+      margin: 0 auto 5px auto;
+  }
+  /*progressbar connectors*/
+  #progressbar li:after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: white;
+      position: absolute;
+      left: -50%;
+      top: 9px;
+      z-index: -1; /*put it behind the numbers*/
+  }
+  #progressbar li:first-child:after {
+      /*connector not needed before the first step*/
+      content: none; 
+  }
+  /*marking active/completed steps green*/
+  /*The number of the step and the connector before it = green*/
+  #progressbar li.active:before,  #progressbar li.active:after{
+      background: #27AE60;
+      color: white;
+  }
+  .Loading{
+    display: none;
+    height: 100vh;
+  }
+  h2 {
+    position: relative;
+    color: rgba(0, 0, 0, .3);
+    font-size: 4em
+  }
+  h2:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 7em;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    color: blueviolet;
+    animation: loading 8s linear;
+  }
+  .pos{
+    position: relative;
+    right: -10px;
+    top: -45px;
+  }
+  @keyframes loading {
+    0% {
+        max-width: 0;
+    }
+  }
+  .result{
+    display:none;
+  }
+  .ans1{
+    display: none;
+  }
+  .ans2{
+    display: none;
+  }
+  .ans3{
+    display: none;
+  }
+  .ans4{
+    display: none;
+  }
+  .answer2{
+    display: block;
+  }
+  .answer2 .item1{
+    display: flex !important;
+  }
+  .Divorce-proceedings{
+    display: none;
+    font-size: 30px;
+    color: darkgoldenrod;
+    margin-top: 31.7px;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .Divorce-agreement{
+    display: none;
+    font-size: 30px;
+    color: darkgoldenrod;
+    margin-top: 31.7px;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  #Options{
+    color: brown;
+    display: initial;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  #Probability{
+    color: brown;
+    display: block;
+    margin-top: 31.7px;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .Taipei{
+    display: none;
+  }
+  .NewTaipei{
+    display: none;
+  }
+  .Taoyuan{
+    display: none;
+  }
+  .Taichung{
+    display: none;
+  }
+  .Tainan{
+    display: none;
+  }
+  .Kaohsiung{
+    display: none;
+  }
+  .Keelung{
+    display: none;
+  }
+  .Yilan{
+    display: none;
+  }
+  .Hsinchu{
+    display: none;
+  }
+  .Hsinchu-County{
+    display: none;
+  }
+  .Miaoli{
+    display: none;
+  }
+  .Changhua{
+    display: none;
+  }
+  .Nantou{
+    display: none;
+  }
+  .Chiayi{
+    display: none;
+  }
+  .Chiayi-County{
+    display: none;
+  }
+  .Yunlin{
+    display: none;
+  }
+  .Pingtung{
+    display: none;
+  }
+  .Hualien{
+    display: none;
+  }
+  .Taitung{
+    display: none;
+  }
+  .Penghu{
+    display: none;
+  }
+  .Taipei1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .NewTaipei1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Taoyuan1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Taichung1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Tainan1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Kaohsiung1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Keelung1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Yilan1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Hsinchu1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Hsinchu-County1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Miaoli1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Changhua1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Nantou1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Chiayi1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Chiayi-County1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Yunlin1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Pingtung1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Hualien1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Taitung1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .Penghu1{
+    display: none;
+    color: darkgoldenrod;
+  }
+  .city-color{
+    color: darkgoldenrod;
+  }
+  .city-taipei{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-newtaipei{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-taoyuan{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-taichung{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-tainan{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-kaohsiung{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-keelung{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-yilan{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-hsinchu{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-hsinchu-county{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-miaoli{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-changhua{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-nantou{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-chiayi{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-chiayi-county{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-yunlin{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-pingtung{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-hualien{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-taitung{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+  .city-penghu{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+  }
+
+  .city-taipei1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-newtaipei1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-taoyuan1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-taichung1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-tainan1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-kaohsiung1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-keelung1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-yilan1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-hsinchu1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-hsinchu-county1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-miaoli1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-changhua1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-nantou1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-chiayi1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-chiayi-county1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-yunlin1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-pingtung1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-hualien1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-taitung1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .city-penghu1{
+    display: none;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .ans-s1{
+    display: none;
+  }
+  .ans-s2{
+    display: none;
+  }
+  .ans-s3{
+    display: none;
+  }
+  .ans-s4{
+    display: none;
+  }
+  .ans-s5{
+    display: none;
+  }
+  .ans-s6{
+    display: none;
+  }
+  .ans-s7{
+    display: none;
+  }
+  .ans-s8{
+    display: none;
+  }
+  .ans-0s1{
+    display: none;
+  }
+  .ans-0s2{
+    display: none;
+  }
+  .ans-0s3{
+    display: none;
+  }
+  .ans-0s4{
+    display: none;
+  }
+  .ans-0s5{
+    display: none;
+  }
+  .ans-0s6{
+    display: none;
+  }
+  .ans-0s7{
+    display: none;
+  }
+  .ans-0s8{
+    display: none;
+  }
+  .ans-0s9{
+    display: none;
+  }
+  .left-side{
+    border-left: 5px solid #638ca5;
+  }
+  .corner{
+    background: #fff;
+    box-shadow: 0 7px 20px rgba(100, 28, 2, 0.135);
+  }
+  .corner:hover{
+    background-color: cadetblue;
+  }
+  .corner:hover h5{
+    color: white;
+  }
+  .corner:hover p{
+    color: white;
+  }
+  .corner:hover span{
+    color: white;
+  }
+  .corner::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px 0;
+    -webkit-transition: inherit;
+    transition: inherit;
+    background-color: cadetblue;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjZmZmZmZmIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtbmFtZT0iTGF5ZXIgMSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHg9IjBweCIgeT0iMHB4Ij48dGl0bGU+NTI8L3RpdGxlPjxwYXRoIGQ9Ik04MS4zMDMyOSwzOC41MjkzOUExNC4wMTgsMTQuMDE4LDAsMSwwLDYxLjQ3NywxOC43MDY3MUw0Ny4wMDMxNSwzMy4xNzkxNGExNC4wMzAzNywxNC4wMzAzNywwLDAsMCwwLDE5LjgyMTcxLDQuODAxMTMsNC44MDExMywwLDAsMS02Ljc4OTc5LDYuNzg5ODcsMjMuNjQzMjcsMjMuNjQzMjcsMCwwLDEsMC0zMy40MDE0NUw1NC42ODcyMSwxMS45MTY4NEEyMy42MjAzLDIzLjYyMDMsMCwwLDEsODguMDkzMDgsNDUuMzE5MjdMODAuOTIzOCw1Mi40ODcxMWE0LjgwMTE0LDQuODAxMTQsMCwwLDEtNi43ODk4LTYuNzg5ODdaTTExLjkwNzQxLDg4LjA5MzlhMjMuNjUwNTMsMjMuNjUwNTMsMCwwLDAsMzMuNDA1ODYtLjAwMUw1OS43ODY2NCw3My42MjE0N2EyMy42MTU4MywyMy42MTU4MywwLDAsMCwwLTMzLjQwMTQ1LDQuODAxMTQsNC44MDExNCwwLDAsMC02Ljc4OTc5LDYuNzg5ODgsMTQuMDE1MzEsMTQuMDE1MzEsMCwwLDEsMCwxOS44MjI2OEwzOC41MjM0OCw4MS4zMDRBMTQuMDE4LDE0LjAxOCwwLDEsMSwxOC42OTcyLDYxLjQ4MTM1TDI1Ljg2Niw1NC4zMTM1YTQuODAxMTQsNC44MDExNCwwLDAsMC02Ljc4OTgtNi43ODk4N2wtNy4xNjg3OSw3LjE2Nzg1QTIzLjY0NDg5LDIzLjY0NDg5LDAsMCwwLDExLjkwNzQxLDg4LjA5MzlaIj48L3BhdGg+PC9zdmc+);
+  }
+  .corner:hover:after{
+      background-color: white;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjZmI2ZjNjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtbmFtZT0iTGF5ZXIgMSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHg9IjBweCIgeT0iMHB4Ij48dGl0bGU+NTI8L3RpdGxlPjxwYXRoIGQ9Ik04MS4zMDMyOSwzOC41MjkzOUExNC4wMTgsMTQuMDE4LDAsMSwwLDYxLjQ3NywxOC43MDY3MUw0Ny4wMDMxNSwzMy4xNzkxNGExNC4wMzAzNywxNC4wMzAzNywwLDAsMCwwLDE5LjgyMTcxLDQuODAxMTMsNC44MDExMywwLDAsMS02Ljc4OTc5LDYuNzg5ODcsMjMuNjQzMjcsMjMuNjQzMjcsMCwwLDEsMC0zMy40MDE0NUw1NC42ODcyMSwxMS45MTY4NEEyMy42MjAzLDIzLjYyMDMsMCwwLDEsODguMDkzMDgsNDUuMzE5MjdMODAuOTIzOCw1Mi40ODcxMWE0LjgwMTE0LDQuODAxMTQsMCwwLDEtNi43ODk4LTYuNzg5ODdaTTExLjkwNzQxLDg4LjA5MzlhMjMuNjUwNTMsMjMuNjUwNTMsMCwwLDAsMzMuNDA1ODYtLjAwMUw1OS43ODY2NCw3My42MjE0N2EyMy42MTU4MywyMy42MTU4MywwLDAsMCwwLTMzLjQwMTQ1LDQuODAxMTQsNC44MDExNCwwLDAsMC02Ljc4OTc5LDYuNzg5ODgsMTQuMDE1MzEsMTQuMDE1MzEsMCwwLDEsMCwxOS44MjI2OEwzOC41MjM0OCw4MS4zMDRBMTQuMDE4LDE0LjAxOCwwLDEsMSwxOC42OTcyLDYxLjQ4MTM1TDI1Ljg2Niw1NC4zMTM1YTQuODAxMTQsNC44MDExNCwwLDAsMC02Ljc4OTgtNi43ODk4N2wtNy4xNjg3OSw3LjE2Nzg1QTIzLjY0NDg5LDIzLjY0NDg5LDAsMCwwLDExLjkwNzQxLDg4LjA5MzlaIj48L3BhdGg+PC9zdmc+);
+  }
+  .col-sm-4{
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .formReset{
+    padding: 0.5rem;
+  }
+  .top{
+    display: none; 
+    position: fixed; 
+    bottom: 2%; 
+    right: 3%; 
+    opacity:0.5; 
+    cursor: pointer; 
+    z-index: 999999;
+    color: blue;
+  }
+  .top:hover{
+    color: #5cb85c;
+  }
+  .ans-title{
+    background-color: skyblue;
+    padding: 10px 0px;
+  }
+  .ans-box{
+    background-color: gainsboro;
+    padding: 30px 1rem 20px;
+  }
+  .ans-cont{
+    border:1px solid black;
+  }
+  .ans-text{
+    padding: 1rem;
+  }
+	.line-taipei{
+		background-image: url(https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png);
+		padding-bottom: 20%;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 3px;
+    width: 150px;
+    height: 35px;
+	}
+  .line-taipei:hover{
+    opacity: 0.5;
+  }
+  .card{
+    background-color: transparent;
+    border:0;
+  }
+  .item1{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .card-body{
+    padding: 1rem;
+  }
+  .card-body h5{
+    text-align: center;
+    font-size: 26px;
+  }
+  .card-body h6{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 22px;
+  }
+  .card-text{
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .nv{
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(to right, rgb(0, 74, 152) 0%, rgb(0, 74, 152) 100%);
+  }
+  .an-box{
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem;
+    border: 1px  solid black;
+  }
+  .an-box h3{
+    margin: 0 auto;
+    padding: 10px 0px;
+    margin-left: -16px;
+    margin-right: -16px;
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .tel{
+    color: blue;
+  }
+  .mail{
+    color: blue;
+  }
+  .line{
+    color: blue;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  select {
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 0.9rem;
+  }
+  .list{
+    padding-left: 2rem;
+    list-style: simp-chinese-informal;
+    font-size: 20px;
+  }
+  .list li{
+    margin: 0.5rem auto;
+  }
+  .list-in{
+    margin: 0.5rem auto;
+    padding-left: 2rem;
+  }
+  .list-in li{
+    margin: 0.5rem auto;
+  }
+  .list-inn{
+    margin: 0.5rem auto;
+    padding-left: 2rem;
+    list-style: decimal;
+  }
+  .list-inn li{
+    margin: 0.5rem auto;
+  }
+  hr{
+    margin: 16px auto !important;
+    border: 0.3px solid whitesmoke;
+  }
+
+  .footer-line{
+    background-color: black;
+    z-index: 999;
+    display: none;
+    padding-top: 6px;
+  }
+  .foline-btn{
+    display: block;
+  }
+  .foline-btn:hover{
+    opacity: 0.5;
+  }
+
+  .an-title{
+    color: brown;
+    font-size: 2rem;
+  }
+  .an-len{
+    background-color: floralwhite;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .an-r{
+    border-right: 3px solid floralwhite;
+  }
+  .an-text{
+    font-weight: 600;
+  }
+  .textdon{
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 50px;
+  }
+  .textdon::after{
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 47%;
+    width: 100px;
+    height: 3px;
+    margin-left: -20px;
+    background-color: #E50012;
+  }
+  .border{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(51, 51, 51, 0.2);
+  }
+  .border::before{
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: -3px;
+    height: 80px;
+    width: 6px;
+    background-color: #007aff;
+  }
+
+  .img-cont{
+    background-image: url(../images/服務/家暴.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .img-cont1{
+    background-image: url(../images/服務/婆媳.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .img-cont2{
+    background-image: url(../images/服務/分居.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .img-cont3{
+    background-image: url(../images/服務/外遇.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .img-cont4{
+    background-image: url(../images/服務/無性生活.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .img-cont5{
+    background-image: url(../images/服務/無生活費.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .img-cont6{
+    background-image: url(../images/服務/賭博.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .img-cont7{
+    background-image: url(../images/服務/其他.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .img-cont8{
+    background-image: url(../images/服務/吸毒.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .ans-contt{
+    padding: 1.5rem 0 1.5rem 30%;
+  }
+
+  .sms-row{
+    display: none;
+  }
+  .child{
+    margin: 0 auto;
+  }
+  .snip1579 {
+    font-family: 'Lato', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.3rem;
+    width: 100%;
+    height: 100%;
+    /* background-color: #000000; */
+    color: #ffffff;
+    text-align: left;
+    font-size: 18px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  .snip1579 * {
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .snip1579 img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .snip1579 figcaption {
+    position: absolute;
+    height: 75px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    overflow: hidden;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .snip1579 h3 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 3px 0;
+  }
+  .snip1579 h5 {
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    color: #bbb;
+    letter-spacing: 1px;
+  }
+  .snip1579 blockquote {
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+    font-size: 1em;
+  }
+  .snip1579 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: auto;
+  }
+  .snip1579:hover figcaption,
+  .snip1579.hover figcaption {
+    height: calc(85%);
+  }
+
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+        flex: 1;
+    }
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+  }
+  @media(max-width:1025px){
+    .modal-content{
+      margin-top: 100%;
+    }
+    .card-text{
+      font-size: 16px;
+    }
+    .line-btn{
+      bottom: 5.5%;
+    }
+    .card-body p{
+      text-align: center;
+    }
+    .mo{
+      width: 100px;
+      height: 100px;
+    }
+    .ans-contt{
+      padding: 1.5rem 0 1.5rem 5%;
+    }
+    .snip1579 img {
+      height: 28vh;
+    }
+  }
+  @media(max-width:992px){
+    .navbar{
+        margin: 0 10px;
+    }
+    .app__text {
+      right: 25px;
+    }
+    .initial .app__img {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0px, 0);
+    }
+    .active .app__img {
+      -webkit-transform: translate3d(0, -1120px, 0);
+              transform: translate3d(0, -1120px, 0);
+    }
+    .app__text--2{
+      left: 40px;
+    }
+    .modal-content{
+      margin-top: 50%;
+    }
+    .card-body h5{
+      text-align: center;
+      font-size: 25px;
+    }
+    .Divorce-proceedings{
+      margin-top: 30px;
+    }
+    .Divorce-agreement{
+      margin-top: 30px;
+    }
+    #Probability{
+      margin-top: 30px;
+    }
+    select {
+      height: calc(1.5em + .75rem + 2px);
+      padding: .375rem 1.75rem .375rem .75rem;
+      font-size: 0.6rem;
+    }
+    .line-btn{
+      bottom: 6.5%;
+    }
+    .top{
+      right: 3.5%;
+    }
+    .mo{
+      width: 250px;
+      height: 250px;
+    }
+    .step{
+      margin-bottom: 35px !important;
+    }
+    .step::before{
+      background-image: url(../images/caret-down-fill.svg);
+      background-position: center center;
+      background-size: cover;
+      right: 50%;
+      top: 103%;
+      width: 20px;
+      height: 20px;
+    }
+    .sm-row{
+      display: none;
+    }
+    .sms-row{
+      display: block;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    .img-cont{
+      background-image: url(../images/服務/家暴.png);
+    }
+    .img-cont1{
+      background-image: url(../images/服務/婆媳.png);      
+    }
+    .img-cont2{
+      background-image: url(../images/服務/分居.png);      
+    }
+    .img-cont3{
+      background-image: url(../images/服務/外遇.png);      
+    }
+    .img-cont4{
+      background-image: url(../images/服務/無性生活.png);      
+    }
+    .img-cont5{
+      background-image: url(../images/服務/無生活費.png);      
+    }
+    .img-cont6{
+      background-image: url(../images/服務/賭博.png);      
+    }
+    .img-cont7{
+      background-image: url(../images/服務/其他.png);      
+    }
+    .img-cont8{
+      background-image: url(../images/服務/吸毒.png);      
+    }
+    .ans-contt{
+      padding: 2.5rem;
+    }
+    .snip1579 img {
+      height: 30vh;
+    }
+  } 
+  @media(max-width:767px){
+    .navbar{
+        margin: 0 10px;
+    }
+    .active .app__img {
+      -webkit-transform: translate3d(0, -1120px, 0);
+              transform: translate3d(0, -1120px, 0);
+    }
+    .fs-title{
+      font-size: 20px;
+    }
+    .modal-content{
+      margin-top: 35%;
+    }
+    .line-btn{
+      bottom: 8.5%;
+    }
+    .top{
+      right: 5%;
+      bottom: 8%;
+    }
+    .step::before{
+      right: 46%;
+      top: 103%;
+    }
+    .footer-line{
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+    }
+    .bo{
+      padding-bottom: 50px;
+    }
+    .title h3{
+      font-size: 2.5rem;
+    }
+    .hero-title{
+      margin-right: 15%;
+    }
+    .textdon{
+      font-size: 2.8rem;
+    }
+    .textdon::after{
+      width: 70px;
+      left: 45%;
+    }
+    .ans-text{
+      padding: 0;
+    }
+    .ans-contt{
+      padding: 0.5rem;
+    }
+    .border{
+      display: none;
+    }
+    .snip1579 img {
+      height: auto;
+    }
+  }
+  @media(max-width:569px){
+    h2 {
+      position: relative;
+      color: rgba(0, 0, 0, .3);
+      font-size: 2.1em
+    }
+  }
+  @media(max-width:515px){
+    .app__text--2{
+      top: 30%;
+    }
+  }
+  @media(max-width:376px){
+    .banner-text{
+      top: 30%;
+    }
+  }
+  @media(max-width:322px){
+    .banner-text{
+      top: 30%;
+    }
+    .app__text--1{
+      top: 10%;
+    }
+    .app__text--2{
+      top: 30%;
+    }
+    .line-btn{
+      bottom: 10%;
+    }
+    .top{
+      bottom: 10%;
+    }
+    .snip1579 img {
+      height: 60vh;
+    }
+  } 
